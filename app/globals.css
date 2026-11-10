@@ -709,7 +709,7 @@ a {
   .section h2 {
     font-size: 39px;
   }
-
+}
   /* Marca de agua corporativa en secciones claras */
 .section.light {
   position: relative;
@@ -727,5 +727,4 @@ a {
   background-size: min(65%, 520px);
   opacity: 0.045;
   pointer-events: none;
-}
 }
