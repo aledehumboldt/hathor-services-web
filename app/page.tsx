@@ -23,21 +23,40 @@ export default function Home() {
 
   async function submitForm(event: React.FormEvent<HTMLFormElement>) {
     event.preventDefault();
-    setBusy(true); setStatus("");
-    const form = new FormData(event.currentTarget);
+  
+    const formElement = event.currentTarget;
+    setBusy(true);
+    setStatus("");
+  
+    const form = new FormData(formElement);
     const payload = Object.fromEntries(form.entries());
+  
     try {
       const response = await fetch("/api/contact", {
-        method: "POST", headers: { "Content-Type": "application/json" },
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
         body: JSON.stringify(payload)
       });
+  
       const result = await response.json();
-      if (!response.ok) throw new Error(result.error || "No se pudo enviar el mensaje.");
+  
+      if (!response.ok) {
+        throw new Error(result.error || "No se pudo enviar el mensaje.");
+      }
+  
       setStatus("¡Gracias! Su mensaje fue enviado. Nos comunicaremos con usted pronto.");
-      event.currentTarget.reset();
+  
+      formElement.reset();
+  
     } catch (error) {
-      setStatus(error instanceof Error ? error.message : "Ocurrió un error. Intente nuevamente.");
-    } finally { setBusy(false); }
+      setStatus(
+        error instanceof Error
+          ? error.message
+          : "Ocurrió un error. Intente nuevamente."
+      );
+    } finally {
+      setBusy(false);
+    }
   }
 
   const closeMenu = () => setMenuOpen(false);
