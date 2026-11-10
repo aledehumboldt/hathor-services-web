@@ -134,7 +134,7 @@ export default function Home() {
       <footer className="footer">
         <div className="footer-main">
           <div className="footer-brand">
-            <a className="brand" href="#inicio"><div className="brand-mark"><Globe2 size={29}/><span>HS</span></div><div><strong>HATHOR SERVICES, C.A.</strong><small>AGENTES ADUANALES</small></div></a>
+            <a className="brand" href="#inicio"><div className="brand-mark"><img src="/hathor-logo.png" alt="Hathor Services C.A. - Agentes Aduanales" /></div><div><strong>HATHOR SERVICES, C.A.</strong><small>AGENTES ADUANALES</small></div></a>
             <p>Su aliado estratégico en comercio exterior y logística internacional desde La Guaira, Venezuela.</p>
             <a href="https://instagram.com/hathorservicesca" target="_blank" rel="noreferrer"><Instagram/> @hathorservicesca</a>
             <a href="mailto:hathorservicesca@gmail.com"><Mail/> hathorservicesca@gmail.com</a>
