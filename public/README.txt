@@ -1,0 +1,1 @@
+Coloque aquí el logotipo oficial de Hathor Services en alta resolución para reemplazar el emblema provisional.
