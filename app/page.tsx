@@ -45,7 +45,7 @@ export default function Home() {
     <>
       <header className="header">
         <a className="brand" href="#inicio" onClick={closeMenu}>
-          <div className="brand-mark"><img src="/hathor-logo.png" alt="Hathor Services C.A. - Agentes Aduanales"\></div>
+          <div className="brand-mark"><img src="/hathor-logo.png" alt="Hathor Services C.A. - Agentes Aduanales"></div>
           <div><strong>HATHOR SERVICES, C.A.</strong><small>AGENTES ADUANALES</small></div>
         </a>
         <button className="menu-toggle" aria-label="Abrir menú" onClick={() => setMenuOpen(!menuOpen)}>{menuOpen ? <X/> : <Menu/>}</button>
