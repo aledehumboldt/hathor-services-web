@@ -70,6 +70,13 @@ a {
   bottom: 7px;
 }
 
+.brand-mark img {
+  width: 58px;
+  height: 58px;
+  object-fit: contain;
+  display: block;
+}
+
 .brand strong {
   display: block;
   font: 600 19px 'Playfair Display', serif;
