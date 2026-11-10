@@ -1,13 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap');
 
 :root {
-  --navy: #102440;
-  --navy2: #172e4d;
-  --gold: #c9a94f;
-  --gold2: #e0c36d;
-  --ink: #172338;
-  --muted: #697386;
-  --paper: #f7f8fa;
+  --navy: #293D50;
+  --navy2: #354B60;
+  --gold: #C5A15B;
+  --gold2: #DFC17C;
+  --ink: #263746;
+  --muted: #727B83;
+  --paper: #F8F7F3;
 }
 
 * {
@@ -709,4 +709,23 @@ a {
   .section h2 {
     font-size: 39px;
   }
+
+  /* Marca de agua corporativa en secciones claras */
+.section.light {
+  position: relative;
+  isolation: isolate;
+}
+
+.section.light::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  background-image: url("/hathor-logo.png");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: min(65%, 520px);
+  opacity: 0.045;
+  pointer-events: none;
+}
 }
