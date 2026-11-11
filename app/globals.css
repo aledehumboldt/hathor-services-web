@@ -1,11 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap');
 
 :root {
-  --navy: #293D50;
-  --navy2: #354B60;
+  --navy: #30485D;
+  --navy2: #3B566D;
   --gold: #C5A15B;
   --gold2: #DFC17C;
-  --ink: #263746;
+  --ink: #283B4C;
   --muted: #727B83;
   --paper: #F8F7F3;
 }
@@ -727,4 +727,16 @@ a {
   background-size: min(65%, 520px);
   opacity: 0.045;
   pointer-events: none;
+}
+
+/* Centrado de los textos de Nosotros */
+.about-copy {
+  max-width: 850px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+
+.about-copy p {
+  text-align: center;
 }
